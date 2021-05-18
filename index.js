@@ -1,9 +1,7 @@
 var proxy = require('express-http-proxy');
 var http=require("http")
-http.globalAgent.maxSockets = Infinity;
 
-var compression = require('compression')
-var cors=require("cors")
+
 const NodeCache = require( "node-cache" );
 const myCache = new NodeCache();
 
