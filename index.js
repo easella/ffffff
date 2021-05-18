@@ -8,8 +8,7 @@ const myCache = new NodeCache();
 var app = require('express')();
 
 var server=http.createServer(app)
-app.use(compression())
-app.use(cors())
+
 
 
 app.use(proxy('https://aquapark.io'));
